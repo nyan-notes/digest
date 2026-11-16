@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · Nyan Digest</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="">Nyan Digest</a>
+  <nav><a href="./#how">How it works</a><a href="./#install">Install</a><a href="./#questions">Questions</a><a href="privacy.html">Privacy</a></nav>
+  <a class="btn small" href="download/Nyan-Digest.zip">Download</a>
+</header>
+
+<main class="page">
+  <h1>Privacy</h1>
+  <p class="date">Last updated November 16, 2026</p>
+
+  <p>The short version: Nyan Digest has no account, no server and no tracking of its own. The only thing that leaves your PC is what Claude needs to write a read.</p>
+
+  <h2>What happens on your PC</h2>
+  <ul>
+    <li>Downloading audio, captions and video from YouTube (with yt-dlp), and reading your own files.</li>
+    <li>Transcribing speech with Whisper, and picking pictures from the video with ffmpeg.</li>
+    <li>Saving everything: transcripts and working files in the <code>work</code> folder, your reads in the <code>reads</code> folder, both inside the Nyan Digest folder (unless you chose another place for your reads).</li>
+  </ul>
+
+  <h2>What is sent to Claude</h2>
+  <ul>
+    <li>To write a read, Nyan Digest runs Claude Code on your PC, signed in with your own Claude account. Claude Code sends the transcript, the video's title and details, a few candidate pictures and your note (if you wrote one) to Anthropic, the company that makes Claude.</li>
+    <li>Anthropic handles that under its own terms and privacy policy, the same as when you use Claude yourself.</li>
+  </ul>
+
+  <h2>Other connections</h2>
+  <ul>
+    <li>YouTube, to get the videos you add.</li>
+    <li>Once a week, Python's package index, to keep the YouTube downloader (yt-dlp) up to date, because YouTube changes often.</li>
+    <li>The first time, Hugging Face, to download the Whisper speech model.</li>
+    <li>During setup only: Windows' winget, to install Python and ffmpeg, and Claude's installer if you ask for Claude Code.</li>
+  </ul>
+
+  <h2>This website</h2>
+  <p>This site has no cookies, no analytics and no forms. The company hosting it may keep standard technical logs (such as IP addresses) to run and protect the service.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Nyan Digest</span>
+    <div class="right"><a href="./#install">Install</a><a href="privacy.html">Privacy</a></div>
+  </div>
+</footer>
+</body>
+</html>
