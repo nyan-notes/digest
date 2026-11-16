@@ -6,7 +6,7 @@
 <title>Nyan Digest: long videos, turned into short reads</title>
 <meta name="description" content="A free Windows app that turns YouTube videos, podcasts and video files into 5 to 15 minute reads, with pictures from the video and links back to the exact moment. Written by Claude, Gemini or Codex.">
 <link rel="icon" href="assets/icon.png">
-<link rel="stylesheet" href="style.css?v=2026-11-16b">
+<link rel="stylesheet" href="style.css?v=2026-11-16c">
 </head>
 <body>
 <header class="wrap nav">
@@ -76,9 +76,9 @@
       <p class="sub">Honest answers to the questions people ask first.</p>
       <div class="faq">
         <details><summary>What do I need?</summary>
-          <p>A Windows 10 or 11 PC with about 1.5 GB free, and one AI writer. Setup asks which one and installs it:</p><ul><li><b>Claude Code</b> with a Claude account on a paid plan (Pro or above). The best reads.</li><li><b>Gemini CLI</b> with a free API key from Google AI Studio. Free; setup shows you how to get the key in a minute.</li><li><b>Codex</b> with a ChatGPT account.</li></ul></details>
+          <p>A Windows 10 or 11 PC with about 1.5 GB free, and one AI writer. Setup asks which one and installs it:</p><ul><li><b>Claude Code</b> with a Claude account on a paid plan (Pro or above). The best reads.</li><li><b>Codex</b> with a ChatGPT account. A strong writer too.</li><li><b>Gemini CLI</b> with a free API key from Google AI Studio (setup shows you how). Free, but limited: only a few reads a day, often from a lighter model, so reads are shorter and less polished. Good for trying it out; for the best results use Claude Code or Codex.</li></ul></details>
         <details><summary>Is it free?</summary>
-          <p>Nyan Digest is free. The writing uses your own account with the writer you picked. With Gemini and a free key it costs nothing, within Google's free daily limits (when they're busy or used up, the app tells you and you can retry later). With Claude or Codex, a read takes a small share of your plan's usage.</p></details>
+          <p>Nyan Digest is free. The writing uses your own account with the writer you picked. With Gemini and a free key it costs nothing, but Google's free limits allow only a few reads a day (when they're used up, the app tells you and you can retry the next day). With Claude or Codex, a read takes a small share of your plan's usage.</p></details>
         <details><summary>How long does a video take?</summary>
           <p>When YouTube has good captions, a few minutes. Otherwise the audio is transcribed on your PC: on a laptop without a graphics card, an hour of audio takes about 40 minutes. A recent NVIDIA graphics card makes it much faster, and the setup uses it automatically.</p></details>
         <details><summary>Windows says "Windows protected your PC", or asks if I want to run setup.bat.</summary>
@@ -90,7 +90,7 @@
         <details><summary>How do I update it?</summary>
           <p>Download the new zip, unzip it over your <b>Nyan Digest</b> folder (replace the files), and run <b>setup.bat</b> again. Your reads, history and settings stay.</p></details>
         <details><summary>How do I remove it?</summary>
-          <p>Delete the <b>Nyan Digest</b> folder and the shortcut on your desktop. Move your <code>reads</code> folder somewhere else first if you want to keep them.</p></details>
+          <p>Open the <b>Nyan Digest</b> folder and double-click <b>uninstall.bat</b>. It removes the app, its shortcut and its downloads, and asks before touching your reads (it keeps them by default). Python, ffmpeg, Node.js and your AI writer stay installed, because other apps may use them; the uninstaller tells you how to remove them too.</p></details>
       </div>
     </div>
   </section>
