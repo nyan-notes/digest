@@ -18,7 +18,7 @@
   <h1>Privacy</h1>
   <p class="date">Last updated November 16, 2026</p>
 
-  <p>The short version: Nyan Digest has no account, no server and no tracking of its own. The only thing that leaves your PC is what Claude needs to write a read.</p>
+  <p>The short version: Nyan Digest has no account, no server and no tracking of its own. The only thing that leaves your PC is what your AI writer needs to write a read.</p>
 
   <h2>What happens on your PC</h2>
   <ul>
@@ -27,10 +27,10 @@
     <li>Saving everything: transcripts and working files in the <code>work</code> folder, your reads in the <code>reads</code> folder, both inside the Nyan Digest folder (unless you chose another place for your reads).</li>
   </ul>
 
-  <h2>What is sent to Claude</h2>
+  <h2>What is sent to your AI writer</h2>
   <ul>
-    <li>To write a read, Nyan Digest runs Claude Code on your PC, signed in with your own Claude account. Claude Code sends the transcript, the video's title and details, a few candidate pictures and your note (if you wrote one) to Anthropic, the company that makes Claude.</li>
-    <li>Anthropic handles that under its own terms and privacy policy, the same as when you use Claude yourself.</li>
+    <li>To write a read, Nyan Digest runs the writer you picked on your PC, with your own account: Claude Code (Anthropic), Gemini CLI (Google) or Codex (OpenAI). It sends the transcript, the video's title and details, a few candidate pictures and your note (if you wrote one) to that company.</li>
+    <li>That company handles it under its own terms and privacy policy, the same as when you use its AI yourself. With a free Gemini API key, Google may use what you send to improve its products, as its free-tier terms say.</li>
   </ul>
 
   <h2>Other connections</h2>
@@ -38,7 +38,7 @@
     <li>YouTube, to get the videos you add.</li>
     <li>Once a week, Python's package index, to keep the YouTube downloader (yt-dlp) up to date, because YouTube changes often.</li>
     <li>The first time, Hugging Face, to download the Whisper speech model.</li>
-    <li>During setup only: Windows' winget, to install Python and ffmpeg, and Claude's installer if you ask for Claude Code.</li>
+    <li>During setup only: Windows' winget, to install Python, ffmpeg and Node.js, and the installer of the writer you picked (Claude's installer, or npm for Gemini CLI and Codex).</li>
   </ul>
 
   <h2>This website</h2>
